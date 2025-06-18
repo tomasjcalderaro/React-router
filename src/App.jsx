@@ -1,11 +1,15 @@
+import { NavBar } from "./components/NavBar"
 
 export const App = () => {
     return (
         <>
-        
-        <h1>Aplicacion de Enrutamiento</h1>
-        <hr />
+            <NavBar></NavBar>
 
+            <Routes>
+                <Route path= '/' element= { <HomeScreen></HomeScreen> }></Route>
+                <Route path= '/about' element= { <AboutScreen></AboutScreen> }></Route>
+                <Route path= '/contact' element= { <ContactScreen></ContactScreen> }></Route>
+            </Routes>
         </>
     )
 }
