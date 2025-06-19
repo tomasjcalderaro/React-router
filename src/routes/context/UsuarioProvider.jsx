@@ -1,16 +1,14 @@
+import { useState } from 'react'
 import { UsuarioContext } from './UsuarioContext'
 
-const usuario = {
-    nombre: 'Tomas Calderaro',
-    tecnologia: 'React',
-    mail: 'tomasjcalderaro@gmail.com',
-    redes: '@tomascalderaro'
-
-}
-
 export const UsuarioProvider = ({childern}) => {
+
+    const [usuario, setusuario] = useState({})
+
+
+
     return (
-        <UsuarioContext.Provider value={( usuario )}>
+        <UsuarioContext.Provider value={( usuario, setusuario )}>
             {childern}
         </UsuarioContext.Provider>
     )

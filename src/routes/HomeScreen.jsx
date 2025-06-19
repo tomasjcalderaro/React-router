@@ -20,7 +20,7 @@ export const HomeScreen = () => {
             <tr>
             <th scope="row">{usuario.nombre}</th>
             <td>{usuario.tecnologia}</td>
-            <td>{usuario.mail}</td>
+            <td>{usuario.email}</td>
             <td>{usuario.redes}</td>
             </tr>
         </tbody>
