@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { UsuarioContext } from "../components/context/UsuarioContext"
+import { UsuarioContext } from "./context/UsuarioContext"
 
 export const HomeScreen = () => {
     
